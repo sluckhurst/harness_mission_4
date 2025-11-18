@@ -8,8 +8,9 @@ pipeline:
     ci:
       codebase:
         connectorRef: account.account_level_github_connector
-        repoName: mission_4
+        repoName: harness_mission_4
         build: <+input>
+        sparseCheckout: []
   stages:
     - stage:
         name: Build Stage
